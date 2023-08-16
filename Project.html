@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mario E. Guerrero" />
+    <title>Final Project</title>
+
+    <link rel="stylesheet" href="project_css.css" />
+    <script src="final_project_js.js">
+
+    </script>
+  </head>
+
+  <body>
+    <img src="4122940.jpg" height="300" alt="Tasty burger" />
+    <br />
+    <h1>Order your Pizza!</h1>
+    <h2 id="p.info" onmouseover="myFunction(this)" onmouseout="normalColor(this)">
+      Contact information:
+    </h2>
+    <div class="info">
+      <form action="action.php" method="post" id="myform" onchange="display()">
+        <label for="fname" onmouseover="myFunction(this)" onmouseout="normalColor(this)"
+          title="Please enter your first name in the textbox" class="label">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First" />
+
+        <label for="lname" class="label" title="Please enter your last name in the textbox">Last Name: </label>
+        <input type="text" id="lname" name="lname" required placeholder="Last" />
+    </div><br>
+
+   
+    <div class="info" onchange="display()">
+
+      <label for="gender" title="Please select your gender" class="label">
+        Gender:
+      </label>
+      <input type="radio" name="gender" id="male" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="Female" />
+      <label for="female">Female</label>
+
+    </div><br>
+
+
+    <div class="info" onchange="display()">
+
+      <label for="address" title="Enter your address in the textbox" class="label">Address:</label>
+      <input type="text" name="address" id="address" placeholder="123 Address St" required />
+
+
+
+      <label for="city" title="Enter your City name" class="label">City: </label><input type="text" name="city"
+        id="city" required placeholder="Name of city">
+      <label for="zipcode" title="Enter your five digit Zip Code" class="label">
+        ZIP Code:</label>
+      <input type="text" name="zipcode" id="zipcode" placeholder="12345" pattern="[0-9]{5}" />
+
+    </div>
+    <br />
+    <div class="info" onchange="display()">
+
+      <label for="phone" title="Enter a valid Phone Number" class="label">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+
+    </div>
+    
+    <hr />
+    <h2>Delivery information:</h2>
+    <div class="info">
+
+      <label for="date" type="date" class="label">Date:</label>
+      <input id="date" type="datetime-local" name="date" />
+
+    </div>
+    <br />
+
+    
+
+    <div>
+      <table id="pizza" >
+        <tr>
+          <th colspan=" 2">PIZZA</th>
+        </tr>
+        <tr>
+          <th title="Please pick your desired toppings">Toppings</th>
+          <th title="Please pick one of the following sauces">Sauce</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="toppings[]" class="toppings" value="Pepperoni" />Pepperoni
+          </td>
+          <td><input type="radio" name="sauce" value="Marinara" checked/>Marinara</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="toppings[]" value="Salami" />Salami</td>
+          <td><input type="radio" name="sauce" value="BBQ Sauce" />BBQ Sauce</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="toppings[]" value="Sausage" />Sausage</td>
+          <td><input type="radio" name="sauce" value="Alfredo Sauce" />Alfredo Sauce</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="toppings[]" value="Bacon" />Bacon</td>
+          <td><input type="radio" name="sauce" value="Tomato Sauce" />Tomato Sauce</td>
+        </tr>
+      </table>
+    </div>
+
+  
+    <div style="overflow-x: auto" class="info">
+
+      <label for="pizzabake" class="label">Cooking Pizza method:</label>
+      <select title="Select how you would like you pizza baked" name="pizzabake" id="pizzabake"  required>
+        <option value="Normal bake">Normal bake</option>
+        <option value="Well done">Well done</option>
+      </select><br /><br />
+
+    </div>
+
+    <p id="nameInfo">Delivery for:</p>
+
+    <div class="label"><input type="submit" class="button" value="Submit your order" /></div>
+
+    <hr />
+    </form>
+    
+  </body>
+
+</html>

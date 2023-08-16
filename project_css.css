@@ -1,0 +1,171 @@
+/*  *   {
+    text-align: center;
+}*/
+
+.info {
+
+    text-align: center;
+}
+
+.label {
+
+    text-transform: uppercase;
+    margin: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+
+    border: 9px double red;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #e9bcbc;
+
+
+}
+
+h2,
+h3 {
+    text-align: center;
+
+    border: 5px dashed tomato;
+    margin: auto;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    align-content: center;
+}
+
+hr {
+    width: 50%;
+
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+/*TABLE OF PIZZA*/
+#pizza {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: rgb(235, 164, 11);
+    margin: auto;
+    border: 5px solid green;
+    table-layout: auto;
+    width: 80%;
+    align-items: center;
+
+
+
+}
+
+#pizza td,
+#pizza th {
+    border: 1px solid #e80909;
+    padding: 8px;
+
+}
+
+#pizza th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #af4819;
+    color: white;
+
+}
+
+tr {
+    border: 1px solid red;
+}
+
+#pizza tr:nth-child(even) {
+    background-color: rgb(235, 188, 87);
+}
+
+#pizza tr:hover {
+    background-color: #ddd;
+}
+
+/*.info {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}*/
+
+body {
+    background-color: rgb(239, 149, 167, 1);
+    /*  margin: auto;
+    background-image: url("C:/Users/mguer/Desktop/CISC%203140/G_Boston-Pizza-July90107_RGB_v4.png.webp");*/
+    /*background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.error {
+    color: red;
+    size: 80%
+}
+
+
+
+#nameInfo {
+    font-family: sans-serif;
+    text-align: center;
+}
+.button {
+    background-color: #b3361a;
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+
+  .button:hover{
+    background-color: #f4927c;
+    color: rgb(0, 0, 0);
+
+  }
+
+  .home{
+
+    font-size: larger;
+    text-align: center;
+   
+  }
+
+  .pizza_website{
+
+    background-color: lightgrey;
+    width: 300px;
+    border: 20px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+
+/*
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+
+
+
+*/
